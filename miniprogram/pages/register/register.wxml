@@ -1,0 +1,18 @@
+<!--pages/register/register.wxml-->
+
+<view class="container">
+
+  <view class="login-topic"  bindtap="showTip">
+    <image class="my-tag" src="../../images/ic_info.png"></image>
+    <text class="login-topic-text">注册须知</text>
+  </view>
+  <text class="register-tip" hidden="{{hidden}}">首先您需要有一个工号,请知悉!</text>
+
+  <view class="login-main">
+  　<input class="login-user-name" type="text" placeholder="工号" bindinput="inputUserNo"/>
+    <input class="login-user-passwd" type="text" password="true" placeholder="密码" bindinput="inputPasswd"/>
+    <button class="login-submit" loading="{{progress}}" catchtap="register">注册</button>
+  </view>
+
+</view>
+

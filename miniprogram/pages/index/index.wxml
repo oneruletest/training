@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="container">
+<modal hidden="{{hidden}}" title="需填写姓名和工号"
+cancel-text="无效"
+ confirm-text="提交" 
+ bindconfirm="confirm">
+    <input class="input" name="userName" placeholder="请输入姓名"
+    bindinput ="nameInput"/>
+    <input class="input" password placeholder="请输入工号"
+     bindinput="employeeIdInput" />
+</modal>
+
+
+  <!-- 用户 openid -->
+  <view class="userinfo">
+    <button 
+      open-type="getUserInfo" 
+      bindgetuserinfo="onGetUserInfo"
+      class="userinfo-avatar"
+      style="background-image: url({{avatarUrl}})"
+    ></button>
+    <view class="container">
+    <text class="name">{{name}}</text>
+    <text class="employeeId">{{employeeId}}</text>
+    </view>
+  </view>
+
+</view>
+<view class="container">
+  <button bindtap="borrowBook"  >
+  <image class='in-image' src="../../images/scan.png"></image>
+  <text>扫描借书</text>  
+  </button>
+
+   <button bindtap="returnBook" >
+  <image class='in-image' src="../../images/scan.png"></image>
+  <text>扫描还书</text>  
+  </button>
+
+</view>
+<!--借书 -->
+
+  <!--还书 -->
+<view class='viewclass'>
+<image src="../../images/tips.png"></image>
+</view>
+<view  class='viewclass'>
+<text>扫描图书条形码即可借/还书</text>
+</view>
+

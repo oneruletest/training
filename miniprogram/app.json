@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "浦发银行 图书管理系统",
+    "navigationBarTextStyle": "black"
+  },
+    "tabBar": {
+      "color": "#000000",
+      "selectedColor": "#5847f3",
+      "borderStyle": "white",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "images/ic_hotest.png",
+          "selectedIconPath": "images/ic_hotest_on.png"
+        },
+        {
+          "pagePath": "pages/search/search",
+          "text": "扫码借还",
+          "iconPath": "images/ic_tab_book.png",
+          "selectedIconPath": "images/ic_tab_book_on.png"
+        },
+        {
+          "pagePath": "pages/my/my",
+          "text": "我的",
+          "iconPath": "images/ic_user.png",
+          "selectedIconPath": "images/ic_user_on.png"
+        }
+      ]
+    }
+}

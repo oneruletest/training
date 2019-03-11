@@ -1,0 +1,22 @@
+<!--login.wxml-->
+<view class="container">
+
+  <view class="login-topic">
+    <text class="login-topic-text">新增管理员,点击</text>
+    <text class="login-topic-text-action" bindtap="register">注册</text>
+  </view>
+
+  <view class="login-main">
+    <image class="login-icon" src="../../images/icon128.png"></image>
+    <input class="login-user-name" type="text" placeholder="工号" bindinput="inputUserName"/>
+    <input class="login-user-passwd" type="text" password="true" placeholder="密码" bindinput="inputPasswd"/>
+
+    <view class="login-save">
+      <text class="login-save-text" >自动登录</text>
+      <switch type="switch" checked="true" bindchange="autoSave"/>
+    </view>
+
+    <button class="login-submit" loading="{{hidden}}" catchtap="loginCodyy">登录</button>
+  </view>
+
+</view>
